@@ -1,0 +1,128 @@
+\mode<presentation>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 
+%% Presentation Themes 
+%%
+
+% Conceptually, a presentation theme dictates for every single detail of a 
+% presentation what it looks like. Thus, choosing a particular presentation 
+% theme will setup for, say, the numbers in enumeration what color they have, 
+% what color their background has, what font is used to render them, whether a 
+% circle or ball or rectangle or whatever is drawn behind them, and so forth. 
+% Thus, when you  choose a presentation theme, your presentation will look the 
+% way someone (the creator of the theme) thought that a presentation should look 
+% like. Presentation themes typically only choose a particular color theme, font 
+% theme, inner theme, and outer theme that go well together.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Color Themes 
+%%
+
+% A color theme only dictates which colors are used in a presentation. If you 
+% have chosen a particular presentation theme and then choose a color theme, 
+% only the colors of your presentation will change. A colour theme can specify 
+% colors in a very detailed way: For example, a colour theme can specifically 
+% change the colors used to render, say, the border of a button, the background 
+% of a button, and the text on a button.
+
+%% Define the official OWASP Brand Colors
+
+%% Main OWASP Color
+\definecolor{o_blue}{cmyk}{1.0,0.69,0.0,0.09}
+
+%% Complimentary OWASP Colors
+\definecolor{o_orange}{cmyk}{0.09,0.30,1.0,0.0}
+\definecolor{o_green}{cmyk}{0.53,0.05,1.0,0.0}
+\definecolor{o_ltblue}{cmyk}{0.66,0.0,0.0,0.0}
+\definecolor{o_red}{cmyk}{0.13,0.78,0.82,0.0}
+\definecolor{o_purple}{cmyk}{0.32,0.82,0.0,0.0}
+\definecolor{o_dkblue}{cmyk}{1.0,0.0,0.0,0.38}
+\definecolor{o_olive}{cmyk}{0.65,0.46,0.78,0.0}
+\definecolor{o_teal}{cmyk}{1.0,0.0,0.58,0.16}
+
+%% The Actual Color Theme
+
+\setbeamercolor{section in toc}{fg=black, bg=white}
+\setbeamercolor{alerted text}{fg=o_red}
+\setbeamercolor*{palette primary}{fg=white, bg=o_blue}
+\setbeamercolor*{titlelike}{parent=palette primary}
+\setbeamercolor{block title}{use=structure,fg=white,bg=o_blue}
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=o_blue!20!white}
+\setbeamercolor{local structure}{fg=o_blue}
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Font Themes 
+%%
+
+%A font theme dictates which fonts or font attributes are used in a 
+% presentation. As for colors, the font of all text elements used in a 
+% presentation can be specified independently.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Inner Themes 
+%%
+
+% An inner theme specifies how certain elements of a presentation are typeset. 
+% This includes all elements that are at the “inside” of the frame, that is, 
+% that are not part of the headline, footline, or sidebars. This includes all
+% enumerations, itemize environments, block environments, theorem environments,
+% or the table of contents. For example, an inner theme might specify that in 
+% an enumeration the number should be typeset without a dot and that a small 
+% circle should be shown behind it. The inner theme would not specify what 
+% color should be used for the number or the circle (this is the job of the 
+% color theme) nor which font should be used (this is the job of the font 
+% theme).
+
+%% Title and part pages.
+%% Itemize environments.
+%% Enumerate environments.
+%% Description environments.
+%% Block environments.
+%% Theorem and proof environments.
+%% Figures and tables.
+%% Footnotes.
+%% Bibliography entries.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Outer Themes
+%%%
+
+% An outer theme specifies what the “outside” or “border” of the presentation 
+% slides should look like. It specifies whether there are head- and footlines, 
+% what is shown in them, whether there is a sidebar, where the logo goes, where 
+% the navigation symbols and bars go, and so on. It also specifies where the 
+% frametitle is put and how it is typeset.
+
+
+%% The head and footline -----------------------------------------------------------
+
+
+%% The sidebars --------------------------------------------------------------------
+
+
+%% The logo ------------------------------------------------------------------------
+
+% Now the logo. As it turns out. I could not include the logo in the headline. If I 
+% tried to, the headline kept shifting downwards. Acting a little smart and lazy, I 
+% just included the logo in the right sidebar and shifted it up. 
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{75mm}(0.98\textwidth, -1cm)
+\includegraphics[height=0.85cm,width=0.85cm]{images/owasp_logo_white}
+\end{textblock*}} % Include OWASP logo in title at top right
+
+
+%% The frame title -----------------------------------------------------------------
+
+
+\mode
+<all>
