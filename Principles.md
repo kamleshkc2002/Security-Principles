@@ -2,6 +2,9 @@ So this is the collection of aphorisms so far. As you can see, a number of aphor
 
 # Principles
 
+## Shannon's version of Kerckhoffs' principle: 
+  - "The enemy knows the system"
+  
 ## Reduce Surface Area
   - Fail to a Secure Mode
   - Fail Safe Defaults
@@ -102,3 +105,10 @@ So this is the collection of aphorisms so far. As you can see, a number of aphor
   - Use Ssl To Protect Session Authentication Cookies
   - Use The Correct Algorithm And Correct Key Size
   - Validate All Values Sent From The Client
+
+
+## Misc Laws?
+  - Security controls decay over time
+  - Highly reliable software is not necessarily secure. 
+  - Increasing software reliability will have only minimal impact on security.
+  - Systems will migrate toward states of higher and higer risk over time.
